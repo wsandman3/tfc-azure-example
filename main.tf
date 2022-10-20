@@ -27,6 +27,7 @@ resource "azurerm_resource_group" "web" {
   tags = {
     "environment" = var.prefix
     "owner" = "clippy"
+    change = "trigger a change"
   }
 }
 
@@ -41,3 +42,6 @@ resource "azurerm_virtual_network" "web" {
     "environment" = var.prefix
   }
 }
+
+
+/// This is a pain in the ass
